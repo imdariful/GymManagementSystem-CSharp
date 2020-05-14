@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{22D9ABF0-60B6-40BC-A07B-C10A0B5BD11E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GymManagementSystem</RootNamespace>
+    <AssemblyName>GymManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDB.Designer.cs">
+      <DependentUpon>AdminDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientDB.Designer.cs">
+      <DependentUpon>ClientDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientDC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientDC.Designer.cs">
+      <DependentUpon>ClientDC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientUpdate.Designer.cs">
+      <DependentUpon>ClientUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DietChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DietChart.Designer.cs">
+      <DependentUpon>DietChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerDB.Designer.cs">
+      <DependentUpon>ManagerDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerDC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerDC.Designer.cs">
+      <DependentUpon>ManagerDC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerEmp.Designer.cs">
+      <DependentUpon>ManagerEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TrainerBD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrainerBD.Designer.cs">
+      <DependentUpon>TrainerBD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrainerDC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrainerDC.Designer.cs">
+      <DependentUpon>TrainerDC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrainerUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrainerUpdate.Designer.cs">
+      <DependentUpon>TrainerUpdate.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminDB.resx">
+      <DependentUpon>AdminDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientDB.resx">
+      <DependentUpon>ClientDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientDC.resx">
+      <DependentUpon>ClientDC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientUpdate.resx">
+      <DependentUpon>ClientUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DietChart.resx">
+      <DependentUpon>DietChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerDB.resx">
+      <DependentUpon>ManagerDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerDC.resx">
+      <DependentUpon>ManagerDC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerEmp.resx">
+      <DependentUpon>ManagerEmp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrainerBD.resx">
+      <DependentUpon>TrainerBD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrainerDC.resx">
+      <DependentUpon>TrainerDC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrainerUpdate.resx">
+      <DependentUpon>TrainerUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bluehalf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\part_gym.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue circle _.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red circle x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textbox2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\running_man_.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\walk-cycle.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hi.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trainer.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manager.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\client.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dietchart.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backbutton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
